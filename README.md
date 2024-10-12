@@ -1,1 +1,10 @@
-# CS50-psets4-volume
+# psets4-volume
+<strong>NOTE</strong>: Copying this data and using it for your submission will breach the academic honesty policy of CS50. Please make sure to understand the material and solve the problem yourself—it's worth it!
+
+<p>This is my solution to the CS50 "Volume" problem set, implemented in C. You can find the full problem description <a href="https://cs50.harvard.edu/x/2024/psets/4/volume/">here</a>.</p>
+Problem Overview
+<p>In this problem set, I wrote a program to manipulate the volume of an audio file. Specifically, I implemented a function that adjusts the volume of a WAV file by a given factor. The program reads an audio file in, modifies its amplitude, and writes the result to an output file.</p> <p>This solution was completed as part of <strong>CS50: Introduction to Computer Science</strong>. Uploading my solution to GitHub complies with CS50’s academic honesty policy. For additional insights, refer to this <a href="https://www.reddit.com/r/cs50/comments/63235w/is_this_reasonable/">Reddit discussion</a>.</p>
+Program Structure
+<ul> <li><strong>Input/Output</strong>: The program reads in a WAV audio file and writes the modified version to an output file.</li> <li><strong>Volume Adjustment</strong>: The program adjusts the volume of each sample in the audio file based on a user-provided scaling factor.</li> <li><strong>File Handling</strong>: It correctly handles the input and output of binary data (WAV file format).</li> </ul>
+Key Steps:
+<ol> <li><strong>Command-line Input</strong>: The program takes three arguments: an input file, an output file, and a scaling factor for the volume.</li> <li><strong>Read Audio File</strong>: The program reads the audio file's headers and samples using binary input.</li> <li><strong>Adjust Volume</strong>: Each sample’s amplitude is multiplied by the scaling factor, effectively increasing or decreasing the volume.</li> <li><strong>Write Audio File</strong>: The modified samples are written to the output file, preserving the original file format and structure.</li> </ol> <p>Note: This repository does not include any files provided by CS50, such as the Makefile or sample audio files.</p>
